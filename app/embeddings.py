@@ -8,7 +8,7 @@ import requests
 from langchain_community.document_loaders import PyPDFLoader
 
 
-url = "https://www.geeksforgeeks.org/ml-linear-regression/"
+
 
 embeddings=HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 os.environ['HF_TOKEN']="put you hugging face token"
