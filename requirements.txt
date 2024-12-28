@@ -1,0 +1,14 @@
+langchain_community
+PyPDF
+python-dotenv
+fastapi
+uvicorn
+requests
+beautifulsoup4
+numpy
+scipy
+langchain_huggingface
+chroma-db==0.5.23
+pydantic
+uuid
+jinja2

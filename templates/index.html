@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI Form Example</title>
+</head>
+<body>
+    <h1>FastAPI Form Example</h1>
+    
+    <!-- Form to process URL -->
+    <h2>Process URL</h2>
+    <form action="/process_url" method="post">
+        <label for="url">Enter URL:</label>
+        <input type="text" id="url" name="url" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Form to upload PDF -->
+    <h2>Process PDF</h2>
+    <form action="/process_pdf" method="post" enctype="multipart/form-data">
+        <label for="file">Upload PDF:</label>
+        <input type="file" id="file" name="file" accept=".pdf" required>
+        <button type="submit">Upload</button>
+    </form>
+
+    <!-- Form for chat -->
+    <h2>Chat</h2>
+    <form action="/chat" method="post">
+        <label for="chat_id">Chat ID:</label>
+        <input type="text" id="chat_id" name="chat_id" required>
+        <label for="question">Your Question:</label>
+        <input type="text" id="question" name="question" required>
+        <button type="submit">Ask</button>
+    </form>
+</body>
+</html>

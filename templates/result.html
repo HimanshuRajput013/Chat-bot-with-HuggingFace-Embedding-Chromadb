@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <h1>Process Result</h1>
+    <p>{{ message }}</p>
+    <p><strong>Chat ID:</strong> {{ chat_id }}</p>
+    <h2>Continue to Chat</h2>
+    <form action="/chat" method="post">
+        <input type="hidden" name="chat_id" value="{{ chat_id }}">
+        <label for="question">Your Question:</label>
+        <input type="text" id="question" name="question" required>
+        <button type="submit">Ask</button>
+    </form>
+    <a href="/">Go back to Home</a>
+</body>
+</html>
